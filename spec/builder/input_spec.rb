@@ -1,7 +1,7 @@
 # encoding: utf-8
 require 'spec_helper'
 
-describe 'FormtasticBootstrap::FormBuilder#input' do
+describe 'FormtasticeRebootstrap::FormBuilder#input' do
 
   include FormtasticSpecHelper
 
@@ -498,7 +498,7 @@ describe 'FormtasticBootstrap::FormBuilder#input' do
           semantic_form_for(@new_post) do |builder|
             input_instance = double('Input instance')
             input_class = "#{input_style.to_s}_input".classify
-            input_constant = "FormtasticBootstrap::Inputs::#{input_class}".constantize
+            input_constant = "FormtasticeRebootstrap::Inputs::#{input_class}".constantize
 
             input_constant.should_receive(:new).and_return(input_instance)
             input_instance.should_receive(:to_html).and_return("some HTML")
@@ -672,14 +672,14 @@ describe 'FormtasticBootstrap::FormBuilder#input' do
         end
         context "defaults" do
           before do
-            @default_block_hint_class = FormtasticBootstrap::FormBuilder.default_block_hint_class
+            @default_block_hint_class = FormtasticeRebootstrap::FormBuilder.default_block_hint_class
           end
           after do
-            FormtasticBootstrap::FormBuilder.default_block_hint_class = @default_block_hint_class
+            FormtasticeRebootstrap::FormBuilder.default_block_hint_class = @default_block_hint_class
           end
           it 'should have a custom hint class defaulted for all forms' do
             hint_text = "this is the title of the post"
-            FormtasticBootstrap::FormBuilder.default_block_hint_class = "custom-hint-class"
+            FormtasticeRebootstrap::FormBuilder.default_block_hint_class = "custom-hint-class"
             concat(semantic_form_for(@new_post) do |builder|
               concat(builder.input(:title, :hint => hint_text))
             end)
@@ -930,23 +930,23 @@ describe 'FormtasticBootstrap::FormBuilder#input' do
           Rails.application.config.stub(:cache_classes).and_return(true)
         end
 
-        it 'should use FormtasticBootstrap::Inputs as default scope' do
-          stub_const 'FormtasticBootstrap::Inputs::NewStringInput', formtastic_bootstrap_input
+        it 'should use FormtasticeRebootstrap::Inputs as default scope' do
+          stub_const 'FormtasticeRebootstrap::Inputs::NewStringInput', formtastic_bootstrap_input
 
           expect {
             subject.class_name(:new_string)
           }.not_to raise_error
         end
 
-        it 'should using Formtastic::Inputs namespace if there is no class in FormtasticBootstrap::Inputs' do
+        it 'should using Formtastic::Inputs namespace if there is no class in FormtasticeRebootstrap::Inputs' do
           stub_const 'Formtastic::Inputs::NewStringInput', formtastic_input
           expect {
             subject.class_name(:new_string)
           }.not_to raise_error
         end
 
-        it 'should prefate FormtasticBootstrap namespace to Formtastic' do
-          stub_const 'FormtasticBootstrap::Inputs::NewStringInput',
+        it 'should prefate FormtasticeRebootstrap namespace to Formtastic' do
+          stub_const 'FormtasticeRebootstrap::Inputs::NewStringInput',
             formtastic_bootstrap_input
           stub_const 'Formtastic::Inputs::NewStringInput', formtastic_input
           subject.class_name(:new_string).should

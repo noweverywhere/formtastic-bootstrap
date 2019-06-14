@@ -1,11 +1,11 @@
-require File.expand_path('../lib/formtastic-bootstrap/version', __FILE__)
+require File.expand_path('../lib/formtastic_rebootstrap/version', __FILE__)
 
 Gem::Specification.new do |s|
-  s.name = "formtastic-bootstrap"
-  s.version = FormtasticBootstrap::VERSION
+  s.name = "formtastic_rebootstrap"
+  s.version = FormtasticRebootstrap::VERSION
   s.authors = ["Matthew Bellantoni", "Aaron Stone"]
   s.email = ["mjbellantoni@yahoo.com", "aaron@serendipity.cx"]
-  s.homepage = "http://github.com/mjbellantoni/formtastic-bootstrap"
+  s.homepage = "http://github.com/noweverywhere/formtastic_rebootstrap"
   s.description = "Formtastic form builder to generate Twitter Bootstrap-friendly markup."
   s.summary = "Formtastic form builder to generate Twitter Bootstrap-friendly markup."
   s.extra_rdoc_files = [
@@ -18,13 +18,13 @@ Gem::Specification.new do |s|
     "README.md",
     "VERSION",
     "lib/**/*.rb",
-    "vendor/assets/stylesheets/formtastic-bootstrap.css"
+    "vendor/assets/stylesheets/formtastic_rebootstrap.css"
   ]
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.10"
 
   s.add_dependency('formtastic', [">= 3.0"])
+  s.add_dependency('bootstrap', [">= 4.0"])
 
   s.add_development_dependency('rake')
   s.add_development_dependency('tzinfo')
