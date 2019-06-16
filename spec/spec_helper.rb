@@ -14,7 +14,7 @@ Dir[File.join(File.dirname(__FILE__), "support", "**/*.rb")].each { |f| require 
 
 RSpec.configure do |config|
   config.before(:each) do
-    Formtastic::Helpers::FormHelper.builder = FormtasticeRebootstrap::FormBuilder
+    Formtastic::Helpers::FormHelper.builder = FormtasticRebootstrap::FormBuilder
   end
   config.include FbCustomMacros
 

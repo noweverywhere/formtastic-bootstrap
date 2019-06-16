@@ -1,4 +1,4 @@
-module FormtasticeRebootstrap
+module FormtasticRebootstrap
   module Inputs
     class HiddenInput < Formtastic::Inputs::HiddenInput
       include Base

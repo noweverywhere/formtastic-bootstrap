@@ -1,4 +1,4 @@
-module FormtasticeRebootstrap
+module FormtasticRebootstrap
   module Inputs
     class RadioInput < Formtastic::Inputs::RadioInput
       include Base

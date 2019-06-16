@@ -1,7 +1,7 @@
 # encoding: utf-8
 require 'spec_helper'
 
-describe 'FormtasticeRebootstrap::FormBuilder#inputs' do
+describe 'FormtasticRebootstrap::FormBuilder#inputs' do
 
   include FormtasticSpecHelper
 

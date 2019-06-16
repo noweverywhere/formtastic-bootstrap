@@ -1,9 +1,9 @@
-module FormtasticeRebootstrap
+module FormtasticRebootstrap
   module Helpers
     module ActionsHelper
 
       include Formtastic::Helpers::ActionsHelper
-      include FormtasticeRebootstrap::Helpers::FieldsetWrapper
+      include FormtasticRebootstrap::Helpers::FieldsetWrapper
 
       def actions(*args, &block)
 

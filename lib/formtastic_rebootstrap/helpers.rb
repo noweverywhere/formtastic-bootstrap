@@ -1,4 +1,4 @@
-module FormtasticeRebootstrap
+module FormtasticRebootstrap
   module Helpers
 
     autoload :ActionsHelper, 'formtastic-bootstrap/helpers/actions_helper'

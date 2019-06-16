@@ -1,4 +1,4 @@
-module FormtasticeRebootstrap
+module FormtasticRebootstrap
   module Inputs
     class EmailInput < Formtastic::Inputs::EmailInput
       include Base

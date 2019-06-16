@@ -1,4 +1,4 @@
-module FormtasticeRebootstrap
+module FormtasticRebootstrap
   module Inputs
     class PasswordInput < Formtastic::Inputs::PasswordInput
       include Base

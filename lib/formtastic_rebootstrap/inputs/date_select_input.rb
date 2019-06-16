@@ -1,4 +1,4 @@
-module FormtasticeRebootstrap
+module FormtasticRebootstrap
   module Inputs
     class DateSelectInput < Formtastic::Inputs::DateSelectInput
       FRAGMENT_CLASSES = {

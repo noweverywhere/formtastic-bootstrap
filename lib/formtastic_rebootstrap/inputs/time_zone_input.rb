@@ -1,4 +1,4 @@
-module FormtasticeRebootstrap
+module FormtasticRebootstrap
   module Inputs
     class TimeZoneInput < Formtastic::Inputs::TimeZoneInput
       include Base

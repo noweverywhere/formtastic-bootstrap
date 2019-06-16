@@ -1,4 +1,4 @@
-module FormtasticeRebootstrap
+module FormtasticRebootstrap
   module Inputs
     class FileInput < Formtastic::Inputs::FileInput
       include Base

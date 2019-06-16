@@ -4,7 +4,7 @@
 #     <button class="btn" type="submit" value="Create Post">
 #   </fieldset>
 # </form>
-module FormtasticeRebootstrap
+module FormtasticRebootstrap
   module Actions
     class ButtonAction < Formtastic::Actions::ButtonAction
       include Base

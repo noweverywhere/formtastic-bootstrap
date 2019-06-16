@@ -1,4 +1,4 @@
-module FormtasticeRebootstrap
+module FormtasticRebootstrap
   module Inputs
     class CountryInput < Formtastic::Inputs::CountryInput
       include Base

@@ -1,4 +1,4 @@
-module FormtasticeRebootstrap
+module FormtasticRebootstrap
   module Inputs
     class PhoneInput < Formtastic::Inputs::PhoneInput
       include Base

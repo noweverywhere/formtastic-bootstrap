@@ -49,7 +49,7 @@ And install it with <tt>bundle install</tt>.
 Add the following line to your Formtastic initialization file:
 
     # config/initializers/formtastic.rb
-    Formtastic::Helpers::FormHelper.builder = FormtasticeRebootstrap::FormBuilder
+    Formtastic::Helpers::FormHelper.builder = FormtasticRebootstrap::FormBuilder
 
 Add the following line to the top of your <tt>application.css</tt> file:
 

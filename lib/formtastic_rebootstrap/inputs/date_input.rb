@@ -1,6 +1,6 @@
-module FormtasticeRebootstrap
+module FormtasticRebootstrap
   module Inputs
-    class DateInput < FormtasticeRebootstrap::Inputs::DateSelectInput
+    class DateInput < FormtasticRebootstrap::Inputs::DateSelectInput
       def to_html
         ::ActiveSupport::Deprecation.warn("DateInput (:as => :date) has been renamed to DateSelectInput (:as => :date_select) and will be removed or changed in the next version of Formtastic, please update your forms.", caller(2))
         super

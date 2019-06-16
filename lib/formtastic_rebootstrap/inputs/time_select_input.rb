@@ -1,4 +1,4 @@
-module FormtasticeRebootstrap
+module FormtasticRebootstrap
   module Inputs
     class TimeSelectInput < Formtastic::Inputs::TimeSelectInput
       FRAGMENT_CLASSES = {

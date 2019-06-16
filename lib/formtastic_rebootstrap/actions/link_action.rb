@@ -3,7 +3,7 @@
 #     <a class="btn" href="">Link</a>
 #   </fieldset>
 # </form>
-module FormtasticeRebootstrap
+module FormtasticRebootstrap
   module Actions
     class LinkAction < Formtastic::Actions::LinkAction
       include Base

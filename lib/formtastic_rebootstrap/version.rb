@@ -1,3 +1,3 @@
-module FormtasticeRebootstrap
+module FormtasticRebootstrap
   VERSION = "3.1.1"
 end

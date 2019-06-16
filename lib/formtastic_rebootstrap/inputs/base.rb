@@ -3,7 +3,7 @@ require "formtastic-bootstrap/inputs/base/hints"
 require "formtastic-bootstrap/inputs/base/html"
 require "formtastic-bootstrap/inputs/base/labelling"
 
-module FormtasticeRebootstrap
+module FormtasticRebootstrap
   module Inputs
     module Base
       extend ActiveSupport::Autoload

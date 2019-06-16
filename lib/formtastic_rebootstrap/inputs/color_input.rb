@@ -1,4 +1,4 @@
-module FormtasticeRebootstrap
+module FormtasticRebootstrap
   module Inputs
     class ColorInput < Formtastic::Inputs::ColorInput
       include Base

@@ -1,4 +1,4 @@
-module FormtasticeRebootstrap
+module FormtasticRebootstrap
   module Inputs
     class StringInput < Formtastic::Inputs::StringInput
       include Base

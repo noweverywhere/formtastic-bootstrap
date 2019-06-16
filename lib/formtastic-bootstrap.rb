@@ -7,6 +7,6 @@ require "formtastic_rebootstrap/actions"
 require "formtastic_rebootstrap/form_builder"
 require "action_view/helpers/text_field_date_helper"
 
-module FormtasticeRebootstrap
+module FormtasticRebootstrap
   extend ActiveSupport::Autoload
 end

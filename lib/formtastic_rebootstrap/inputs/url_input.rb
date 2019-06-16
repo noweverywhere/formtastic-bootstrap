@@ -1,4 +1,4 @@
-module FormtasticeRebootstrap
+module FormtasticRebootstrap
   module Inputs
     class UrlInput < Formtastic::Inputs::UrlInput
       include Base

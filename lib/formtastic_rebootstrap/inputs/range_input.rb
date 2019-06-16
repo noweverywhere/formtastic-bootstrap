@@ -1,4 +1,4 @@
-module FormtasticeRebootstrap
+module FormtasticRebootstrap
   module Inputs
     class RangeInput < Formtastic::Inputs::RangeInput
       include Base

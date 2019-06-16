@@ -1,4 +1,4 @@
-module FormtasticeRebootstrap
+module FormtasticRebootstrap
   module Helpers
     module ErrorsHelper
       include Formtastic::Helpers::FileColumnDetection
