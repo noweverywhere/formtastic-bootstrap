@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'FormtasticBootstrap::FormBuilder#fields_for' do
+describe 'FormtasticRebootstrap::FormBuilder#fields_for' do
 
   include FormtasticSpecHelper
 

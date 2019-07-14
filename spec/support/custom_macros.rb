@@ -199,7 +199,7 @@ module CustomMacros
         end
 
         it 'should render a paragraph for the errors' do
-          FormtasticBootstrap::FormBuilder.inline_errors = :sentence
+          FormtasticRebootstrap::FormBuilder.inline_errors = :sentence
           concat(semantic_form_for(@new_post) do |builder|
             concat(builder.input(:title, :as => type))
           end)
@@ -211,7 +211,7 @@ module CustomMacros
         end
 
         it 'should not display an error list' do
-          FormtasticBootstrap::FormBuilder.inline_errors = :list
+          FormtasticRebootstrap::FormBuilder.inline_errors = :list
           concat(semantic_form_for(@new_post) do |builder|
             concat(builder.input(:title, :as => type))
           end)

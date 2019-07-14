@@ -1,7 +1,5 @@
 # Formtastic Bootstrap
 
-[![Build Status](https://travis-ci.org/mjbellantoni/formtastic-bootstrap.svg?branch=master)](https://travis-ci.org/mjbellantoni/formtastic-bootstrap)
-
 A [Formtastic](https://github.com/justinfrench/formtastic) form builder that creates markup suitable for the [Twitter Bootstrap](http://twitter.github.com/bootstrap/) framework.  In theory, it should just work.  Two great tastes in one!
 
 You can follow [FormBoot on twitter](http://twitter.com/FormBoot) for update announcements and other relevant info.
@@ -36,11 +34,11 @@ This version of Formtastic Bootstrap should support the following:
 
 Install the gem with
 
-    gem install formtastic-bootstrap
+    gem install formtastic_rebootstrap
 
 Or add it to your Gemfile:
 
-    gem 'formtastic-bootstrap'
+    gem 'formtastic_rebootstrap'
 
 And install it with <tt>bundle install</tt>.
 
@@ -49,14 +47,14 @@ And install it with <tt>bundle install</tt>.
 Add the following line to your Formtastic initialization file:
 
     # config/initializers/formtastic.rb
-    Formtastic::Helpers::FormHelper.builder = FormtasticBootstrap::FormBuilder
+    Formtastic::Helpers::FormHelper.builder = FormtasticRebootstrap::FormBuilder
 
 Add the following line to the top of your <tt>application.css</tt> file:
 
     # app/assets/stylesheets/application.css
-    *= require formtastic-bootstrap
+    *= require formtastic_rebootstrap
 
-Make sure you've already downloaded and installed Formtastic! Do *not* however require formtastic in your `application.css` file or you will have many bootstrap/formtastic-bootstrap styles overwritten. 
+Make sure you've already downloaded and installed Formtastic! Do *not* however require formtastic in your `application.css` file or you will have many bootstrap/formtastic_rebootstrap styles overwritten. 
 
 
 ## Formtastic vs. Formtastic Bootstrap
@@ -149,7 +147,7 @@ use the ```:append_content``` or ```:prepend_content``` option.
 
 ### Contributors
 
-A big thank you [to all contributors](https://github.com/mjbellantoni/formtastic-bootstrap/contributors)!
+A big thank you [to all contributors](https://github.com/mjbellantoni/formtastic_rebootstrap/contributors)!
 
 ### Submitting Issues
 

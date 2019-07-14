@@ -9,12 +9,12 @@ formtastic_full_gem_path = Bundler.load.specs.find{|s| s.name == "formtastic" }.
 require File.join(formtastic_full_gem_path, 'spec', 'spec_helper.rb')
 
 # Now add in ours.
-require 'formtastic-bootstrap'
+require 'fortastic_rebootstrap'
 Dir[File.join(File.dirname(__FILE__), "support", "**/*.rb")].each { |f| require f }
 
 RSpec.configure do |config|
   config.before(:each) do
-    Formtastic::Helpers::FormHelper.builder = FormtasticBootstrap::FormBuilder
+    Formtastic::Helpers::FormHelper.builder = FormtasticRebootstrap::FormBuilder
   end
   config.include FbCustomMacros
 

@@ -25,11 +25,11 @@ end
 task :default => :spec
 
 require 'rdoc/task'
-require File.expand_path('../lib/formtastic-bootstrap/version', __FILE__)
+require File.expand_path('../lib/formtastic_rebootstrap/version', __FILE__)
 Rake::RDocTask.new do |rdoc|
-  version = FormtasticBootstrap::VERSION
+  version = FormtasticRebootstrap::VERSION
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "formtastic-bootstrap #{version}"
+  rdoc.title = "formtastic_rebootstrap #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
